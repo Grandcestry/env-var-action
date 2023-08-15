@@ -1,0 +1,15 @@
+name: Environment Variable Action
+description: Sets and validates environment variables
+inputs:
+  export:
+    description: Environment variables to export in YAML format
+    required: false
+  require:
+    description: List of environment variable names to check in YAML format
+    required: false
+  cond:
+    description: Conditions for exporting and validating environment variables
+    required: false
+runs:
+  using: node16
+  main: src/index.mjs

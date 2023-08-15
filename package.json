@@ -1,0 +1,42 @@
+{
+  "name": "env-var-action",
+  "version": "1.0.0",
+  "description": "A GitHub Action to dynamically set and require environment variables based on conditional logic.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "exit 0",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grandcestry/env-var-action.git"
+  },
+  "author": "Ilya Suzdalnitskiy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Grandcestry/env-var-action/issues"
+  },
+  "homepage": "https://github.com/Grandcestry/env-var-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-plugin-import": "^2.28.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.0",
+    "prettier": "^3.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.mjs": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}
