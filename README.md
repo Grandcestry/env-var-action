@@ -17,7 +17,7 @@ In your `.github/workflows/your-workflow-file.yml`, use the action as follows:
 ```yml
 steps:
   - name: Export Environment Variables
-    uses: Grandcestry/env-var-action@main
+    uses: grandcestry/env-var-action@main
     with:
       export: |
         TEST: true
@@ -32,7 +32,7 @@ To ensure that specific environment variables are present, use the `require` inp
 ```yml
 steps:
   - name: Export and Require Environment Variables
-    uses: Grandcestry/env-var-action@main
+    uses: grandcestry/env-var-action@main
     with:
       export: |
         TEST: true
@@ -51,7 +51,7 @@ You can use conditions to export environment variables based on the current work
 ```yml
 steps:
   - name: Export Environment Variables Conditionally
-    uses: Grandcestry/env-var-action@main
+    uses: grandcestry/env-var-action@main
     with:
       cond: |
         - if: ${{ github.ref == 'refs/heads/main' }}
@@ -99,4 +99,4 @@ We welcome contributions!
 
 ## Feedback and Issues
 
-If you have feedback or issues, please open an issue on the [GitHub repository](https://github.com/Grandcestry/env-var-action).
+If you have feedback or issues, please open an issue on the [GitHub repository](https://github.com/grandcestry/env-var-action).

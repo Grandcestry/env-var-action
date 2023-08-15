@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Grandcestry/env-var-action.git"
+    "url": "git+https://github.com/grandcestry/env-var-action.git"
   },
   "author": "Ilya Suzdalnitskiy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Grandcestry/env-var-action/issues"
+    "url": "https://github.com/grandcestry/env-var-action/issues"
   },
-  "homepage": "https://github.com/Grandcestry/env-var-action#readme",
+  "homepage": "https://github.com/grandcestry/env-var-action#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
     "js-yaml": "^4.1.0"
