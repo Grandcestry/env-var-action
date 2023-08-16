@@ -14,7 +14,7 @@ const formatOutput = str =>
 
 const logYaml = yaml => {
   console.log('');
-  console.log('rendered yaml:');
+  console.log('Rendered YAML:');
   console.log('');
   console.log(formatOutput(yaml));
   console.log('');
